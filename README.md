@@ -15,7 +15,7 @@ Add the following code before all scripts in your game or application's `index.h
 			args[0] ||= {};
 			args[0].unadjustedMovement = true;
 			await oRequestPointerLock.apply(this, args);
-		} catch(err) {
+		} catch (err) {
 			console.log(err);
 		}
 	};
