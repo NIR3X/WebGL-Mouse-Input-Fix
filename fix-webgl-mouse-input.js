@@ -1,5 +1,5 @@
 const oRequestPointerLock = Element.prototype.requestPointerLock;
-Element.prototype.requestPointerLock = async function requestPointerLockHk(...args) {
+Element.prototype.requestPointerLock = async function hkRequestPointerLock(...args) {
 	try {
 		(args[0] ||= {}).unadjustedMovement = true;
 		await oRequestPointerLock.apply(this, args);
